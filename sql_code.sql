@@ -89,12 +89,3 @@ from movies
 group by Genre
 order by Genre;
 
-SELECT
-    Star AS Actor_Actress,
-    COUNT(*) AS Appearances,
-    AVG(IMDB_Rating) AS Average_IMDB_Rating
-FROM movies
-GROUP BY Star
-ORDER BY Appearances DESC
-LIMIT 1;
-
